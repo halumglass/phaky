@@ -1,0 +1,939 @@
+<!--Lưu ý : khi phả đồ chiều ngang quá lớn không hiển thị đủ.
+Ta tìm và thay đổi giá trị width để hiển thị đủ phả đồ.
+<div class='tree' style='width:1500%;overflow:auto;'>
+Tác Giả Phần Mềm : Bùi Tiến Trường - SĐT : 0989995221-->
+<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><title>Pha Do CU PHI KHANH - Phan Mem Soan Pha - Truongbt</title><style>* {margin: 0; padding: 0;}.tree ul {    padding: 40px 3px 0 5px;    position: relative;    transition: all 0.5s;    -webkit-transition: all 0.5s;    -moz-transition: all 0.5s;}
+.tree li {    float: left; text-align: center;    list-style-type: none;     position: relative;    padding: 40px 5px 0 5px;    transition: all 0.5s;    -webkit-transition: all 0.5s;    -moz-transition: all 0.5s;}
+.tree li::before, .tree li::after{    content: '';    position: absolute; top: 0; right: 50%;    border-top: 1px solid #000;    width: 50%; height: 40px}.tree li::after{    right: auto; left: 50%;    border-left: 1px solid #000;}.tree li:only-child::after, .tree li:only-child::before {}
+.tree li:only-child{ }.tree li:first-child::before, .tree li:last-child::after{    border: 0px none;}.tree li:last-child::before{    border-right: 1px solid #000;    border-radius: 0 0px 0 0;    -webkit-border-radius: 0 0px 0 0;    -moz-border-radius: 0 0px 0 0;}.tree li:first-child::after{    border-radius: 0px 0 0 0;    -webkit-border-radius: 0px 0 0 0;    -moz-border-radius: 0px 0 0 0;}
+.tree ul ul::before{    content: '';    position: absolute; top: 0; left: 50%;    border-left: 1px solid #000;    width: 0; height: 40px}.tree li a{    height : 40px;    width : 150px;    background-image: url('Khung1.jpg');    border: 1px solid #000;    padding: 10px 5px 10px 5px;    text-decoration: none;    color: #000;    font-family: arial, verdana, tahoma;    font-size: 11px;    display: inline-block;    border-radius: 0px;    -webkit-border-radius: 0px;    -moz-border-radius: 0px;    transition: all 0.5s;    -webkit-transition: all 0.5s;    -moz-transition: all 0.5s;}
+.tree li a:hover, .tree li a:hover+ul li a {    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;}.tree li a:hover+ul li::after,.tree li a:hover+ul li::before,.tree li a:hover+ul::before,.tree li a:hover+ul ul::before{    border-color:  #000;}</style></head><body><div class='tree' style='width:1500%;overflow:auto;'><UL>
+<LI><A Href='#'>KHANH<br><br></A>
+<UL>
+<LI><A Href='#'>TRÃI<br><br></A>
+<UL>
+<LI><A Href='#'>KHUÊ<br><br></A></LI>
+<LI><A Href='#'>ƯNG<br><br></A></LI>
+<LI><A Href='#'>PHÙ<br><br></A></LI>
+<LI><A Href='#'>BẢN<br><br></A></LI>
+<LI><A Href='#'>TÍCH<br><br></A></LI>
+<LI><A Href='#'>VŨ<br><br></A>
+<UL>
+<LI><A Href='#'>TẠC<br><br></A></LI>
+<LI><A Href='#'>GIÁM<br><br></A></LI>
+<LI><A Href='#'>KIÊN<br><br></A></LI>
+<LI><A Href='#'>THIÊM<br><br></A>
+<UL>
+<LI><A Href='#'>THỊNH<br><br></A>
+<UL>
+<LI><A Href='#'>THÁI<br><br></A>
+<UL>
+<LI><A Href='#'>THĂNG<br><br></A>
+<UL>
+<LI><A Href='#'>THỌ<br><br></A>
+<UL>
+<LI><A Href='#'>HÙNG<br><br></A>
+<UL>
+<LI><A Href='#'>LINH<br><br></A>
+<UL>
+<LI><A Href='#'>08.TRE<br><br></A></LI>
+<LI><A Href='#'>HUẨN<br><br></A>
+<UL>
+<LI><A Href='#'>THÀNH<br><br></A>
+<UL>
+<LI><A Href='#'>RƠI<br><br></A>
+<UL>
+<LI><A Href='#'>DỤNG<br><br></A>
+<UL>
+<LI><A Href='#'>12.DỤ<br><br></A>
+<UL>
+<LI><A Href='#'>TRỤ<br><br></A>
+<UL>
+<LI><A Href='#'>NẤNG<br><br>NGỮ</A></LI>
+<LI><A Href='#'>LÂN<br><br>LAI</A></LI>
+<LI><A Href='#'>CHIẾN<br><br></A>
+<UL>
+<LI><A Href='#'>LÊ<br><br></A>
+<UL>
+<LI><A Href='#'>AN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>ĐOÀN<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRÒ<br><br></A>
+<UL>
+<LI><A Href='#'>LIÊN<br><br></A></LI>
+<LI><A Href='#'>TRỌNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LUÂN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRỤ<br><br></A></LI>
+<LI><A Href='#'>PHỤ<br><br></A>
+<UL>
+<LI><A Href='#'>BẰNG<br><br></A>
+<UL>
+<LI><A Href='#'>?<br><br></A></LI>
+<LI><A Href='#'>15.THẮNG<br><br></A>
+<UL>
+<LI><A Href='#'>16.THÀNH<br><br></A></LI>
+<LI><A Href='#'>16.DŨNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>?<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>PHỤ<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.ĐI<br><br></A>
+<UL>
+<LI><A Href='#'>12.KHẢ<br><br></A>
+<UL>
+<LI><A Href='#'>CA<br><br></A>
+<UL>
+<LI><A Href='#'>KHẢI<br><br></A></LI>
+<LI><A Href='#'>TUÂN<br><br></A>
+<UL>
+<LI><A Href='#'>ĐỨC<br><br></A>
+<UL>
+<LI><A Href='#'>HIÊN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LINH<br><br>TÚ</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>NGUYỆT<br><br></A></LI>
+<LI><A Href='#'>NGHÉ<br><br></A>
+<UL>
+<LI><A Href='#'>CHÂM<br><br></A></LI>
+<LI><A Href='#'>CHI<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TUYẾN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>SƯỚNG<br><br></A>
+<UL>
+<LI><A Href='#'>HẲNG<br><br></A></LI>
+<LI><A Href='#'>HOA<br><br></A></LI>
+<LI><A Href='#'>LAN<br><br></A></LI>
+<LI><A Href='#'>HUỆ<br><br></A></LI>
+<LI><A Href='#'>NGUYÊN<br><br></A>
+<UL>
+<LI><A Href='#'>TRƯỜNG<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>HÒA<br><br></A>
+<UL>
+<LI><A Href='#'>SƠN<br><br></A>
+<UL>
+<LI><A Href='#'>HẠNH<br><br></A></LI>
+<LI><A Href='#'>HUYỀN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HẢI<br><br></A>
+<UL>
+<LI><A Href='#'>NAM<br><br></A></LI>
+<LI><A Href='#'>YẾN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>CHIẾN<br><br></A>
+<UL>
+<LI><A Href='#'>LONG<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THẮNG<br><br></A>
+<UL>
+<LI><A Href='#'>THIỆN<br><br></A></LI>
+<LI><A Href='#'>TRÀ<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>BÌNH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>12.THỎA<br><br></A>
+<UL>
+<LI><A Href='#'>BIỆN<br><br></A>
+<UL>
+<LI><A Href='#'>LỰC<br><br></A></LI>
+<LI><A Href='#'>BỘ<br><br></A>
+<UL>
+<LI><A Href='#'>TUYẾT<br><br></A></LI>
+<LI><A Href='#'>HƯƠNG<br><br></A></LI>
+<LI><A Href='#'>HOA<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRỰ<br><br></A>
+<UL>
+<LI><A Href='#'>HUYỀN<br><br></A></LI>
+<LI><A Href='#'>YẾN<br><br></A></LI>
+<LI><A Href='#'>KHA<br><br></A></LI>
+<LI><A Href='#'>KIÊN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HUỆ<br><br></A></LI>
+<LI><A Href='#'>TUẤT<br><br></A></LI>
+<LI><A Href='#'>LUẬN<br><br></A>
+<UL>
+<LI><A Href='#'>HIỆP<br><br></A>
+<UL>
+<LI><A Href='#'>THÙY<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HÙNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>DINH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRUYỀN<br><br></A>
+<UL>
+<LI><A Href='#'>PHƯỢNG<br><br>TƯỞNG</A></LI>
+<LI><A Href='#'>TRƯỞNG<br><br></A>
+<UL>
+<LI><A Href='#'>ĐỆ<br><br></A></LI>
+<LI><A Href='#'>TÂM<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THOA<br><br>THÔNG</A></LI>
+<LI><A Href='#'>MINH<br><br>HIỀN</A></LI>
+<LI><A Href='#'>MAI<br><br>NHIỆM</A></LI>
+<LI><A Href='#'>QUỐC<br><br></A>
+<UL>
+<LI><A Href='#'>MƯỜI<br><br></A></LI>
+<LI><A Href='#'>TOÀN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>VƯỢNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRUYỀN<br><br></A></LI>
+<LI><A Href='#'>ĐIỀN<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A>
+<UL>
+<LI><A Href='#'>THUẬN<br><br></A></LI>
+<LI><A Href='#'>THỦY<br><br></A></LI>
+<LI><A Href='#'>THIỆN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRỌNG<br><br></A>
+<UL>
+<LI><A Href='#'>VIỆT<br><br></A></LI>
+<LI><A Href='#'>TIỆP<br><br></A></LI>
+<LI><A Href='#'>HOA<br><br></A></LI>
+<LI><A Href='#'>KHÁNH<br><br></A></LI>
+<LI><A Href='#'>ĐẠT<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LƯU<br><br></A>
+<UL>
+<LI><A Href='#'>NAM<br><br></A></LI>
+<LI><A Href='#'>KHÁNH<br><br></A></LI>
+<LI><A Href='#'>TOÀN<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>12.THÍCH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>CHÚNG<br><br></A>
+<UL>
+<LI><A Href='#'>12.LUNG<br><br></A>
+<UL>
+<LI><A Href='#'>LỘC<br><br></A></LI>
+<LI><A Href='#'>LÂM<br><br></A>
+<UL>
+<LI><A Href='#'>LAI<br><br></A>
+<UL>
+<LI><A Href='#'>TRANG<br><br></A></LI>
+<LI><A Href='#'>TRINH<br><br></A></LI>
+<LI><A Href='#'>THỊNH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>YẾN<br><br></A></LI>
+<LI><A Href='#'>HƯƠNG<br><br></A>
+<UL>
+<LI><A Href='#'>THẢO<br><br></A></LI>
+<LI><A Href='#'>ĐỨC<br><br></A></LI>
+<LI><A Href='#'>NAM<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>12.TUNG<br><br></A>
+<UL>
+<LI><A Href='#'>HÀ<br><br></A>
+<UL>
+<LI><A Href='#'>BÀI<br><br></A>
+<UL>
+<LI><A Href='#'>KHÔI<br><br></A></LI>
+<LI><A Href='#'>HIỀN<br><br></A></LI>
+<LI><A Href='#'>KIÊM<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>MANH<br><br></A>
+<UL>
+<LI><A Href='#'>HỒNG<br><br></A></LI>
+<LI><A Href='#'>HIỆP<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LAN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HOÀNH<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>CAN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>09.THU<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HOÀN<br><br></A>
+<UL>
+<LI><A Href='#'>09.VƠN<br><br></A></LI>
+<LI><A Href='#'>09.UY<br><br></A></LI>
+<LI><A Href='#'>CHANG<br><br></A>
+<UL>
+<LI><A Href='#'>10.THƯỢNG<br><br></A>
+<UL>
+<LI><A Href='#'>11.NHÃ<br><br></A>
+<UL>
+<LI><A Href='#'>TỤNG<br><br></A>
+<UL>
+<LI><A Href='#'>TỘ<br><br>NGỌC</A></LI>
+<LI><A Href='#'>THỦY<br><br>HOANH</A></LI>
+<LI><A Href='#'>VIÊN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LỄ<br><br></A>
+<UL>
+<LI><A Href='#'>KÍNH<br><br></A>
+<UL>
+<LI><A Href='#'>DẬU<br><br></A></LI>
+<LI><A Href='#'>LŨY<br><br></A>
+<UL>
+<LI><A Href='#'>NAM<br><br></A>
+<UL>
+<LI><A Href='#'>AN<br><br></A></LI>
+<LI><A Href='#'>AN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HIỀN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LIỄU<br><br></A></LI>
+<LI><A Href='#'>LỠI<br><br></A>
+<UL>
+<LI><A Href='#'>NGỌC<br><br></A></LI>
+<LI><A Href='#'>NGẦN<br><br></A></LI>
+<LI><A Href='#'>NGOAN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LUYỄN<br><br></A></LI>
+<LI><A Href='#'>LIỆU<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LÊ<br><br>13.CHÚC</A></LI>
+<LI><A Href='#'>ƠN<br><br>QUYỂN</A></LI>
+<LI><A Href='#'>THÍNH<br><br></A>
+<UL>
+<LI><A Href='#'>THẢO<br><br></A>
+<UL>
+<LI><A Href='#'>HẠNH<br><br></A></LI>
+<LI><A Href='#'>HÀ<br><br></A></LI>
+<LI><A Href='#'>KIÊN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>ĐÀM<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A></LI>
+<LI><A Href='#'>ANH<br><br></A></LI>
+<LI><A Href='#'>ANH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>DUNG<br><br>CHÚC</A></LI>
+<LI><A Href='#'>DỊU<br><br>HIẾU</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>PHÉP<br><br></A>
+<UL>
+<LI><A Href='#'>LOAN<br><br></A></LI>
+<LI><A Href='#'>LƯU<br><br></A>
+<UL>
+<LI><A Href='#'>PHONG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THU<br><br></A></LI>
+<LI><A Href='#'>NHUNG<br><br></A></LI>
+<LI><A Href='#'>NHÂM<br><br></A></LI>
+<LI><A Href='#'>MAI<br><br></A></LI>
+<LI><A Href='#'>NHINH<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>LỄ<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.CẦU<br><br></A>
+<UL>
+<LI><A Href='#'>TỤ<br><br></A>
+<UL>
+<LI><A Href='#'>TỰ<br><br>TIÊU</A></LI>
+<LI><A Href='#'>THỨ<br><br>TÂM</A></LI>
+<LI><A Href='#'>ĐÔN<br><br></A>
+<UL>
+<LI><A Href='#'>CHÍNH<br><br></A>
+<UL>
+<LI><A Href='#'>THIẾM<br><br></A></LI>
+<LI><A Href='#'>CHÚC<br><br></A>
+<UL>
+<LI><A Href='#'>PHÁT<br><br></A></LI>
+<LI><A Href='#'>NGÂN<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>PHA<br><br></A></LI>
+<LI><A Href='#'>HƯNG<br><br></A></LI>
+<LI><A Href='#'>MỪNG<br><br>LƯỢNG</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HÓA<br><br></A></LI>
+<LI><A Href='#'>TIÊN<br><br></A>
+<UL>
+<LI><A Href='#'>THIÊM<br><br></A>
+<UL>
+<LI><A Href='#'>HIỀN<br><br></A></LI>
+<LI><A Href='#'>HẬU<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THIỀNG<br><br></A>
+<UL>
+<LI><A Href='#'>DÙNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HUYỀN<br><br></A></LI>
+<LI><A Href='#'>DUNG<br><br></A></LI>
+<LI><A Href='#'>LOAN<br><br></A></LI>
+<LI><A Href='#'>CHIẾN<br><br></A>
+<UL>
+<LI><A Href='#'>THẮNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>NHÀI<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TIÊN<br><br></A></LI>
+<LI><A Href='#'>THỦ<br><br></A>
+<UL>
+<LI><A Href='#'>NGÀ<br><br>NHAN</A></LI>
+<LI><A Href='#'>NGUYỆT<br><br>CHẤN</A></LI>
+<LI><A Href='#'>TĨNH<br><br></A>
+<UL>
+<LI><A Href='#'>THẮNG<br><br></A>
+<UL>
+<LI><A Href='#'>TRÍ<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THIỆN<br><br></A></LI>
+<LI><A Href='#'>BẢO<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LỰU<br><br>TUẤN</A></LI>
+<LI><A Href='#'>LƯU<br><br>THÀNH</A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>KIỀN<br><br></A></LI>
+<LI><A Href='#'>CỰ<br><br></A>
+<UL>
+<LI><A Href='#'>CƯ<br><br></A></LI>
+<LI><A Href='#'>TỦNG<br><br></A>
+<UL>
+<LI><A Href='#'>HOA<br><br></A></LI>
+<LI><A Href='#'>TRUNG<br><br></A>
+<UL>
+<LI><A Href='#'>LINH<br><br></A></LI>
+<LI><A Href='#'>HIẾU<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TUYẾT<br><br></A></LI>
+<LI><A Href='#'>THOA<br><br></A></LI>
+<LI><A Href='#'>THẢO<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>CỰ<br><br></A>
+<UL>
+<LI><A Href='#'>DƯ<br><br></A>
+<UL>
+<LI><A Href='#'>KIÊN<br><br></A></LI>
+<LI><A Href='#'>YÊN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THỪA<br><br></A></LI>
+<LI><A Href='#'>THOAN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HƯỚNG<br><br></A>
+<UL>
+<LI><A Href='#'>KHÁNH<br><br></A>
+<UL>
+<LI><A Href='#'>TRƯỞNG<br><br></A>
+<UL>
+<LI><A Href='#'>TRANG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>CHIẾN<br><br></A>
+<UL>
+<LI><A Href='#'>HIẾU<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LAN<br><br>TRANG</A></LI>
+<LI><A Href='#'>CÚC<br><br>ĐỨC</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>ÁNG<br><br></A></LI>
+<LI><A Href='#'>LÁNG<br><br>HẠNH</A></LI>
+<LI><A Href='#'>ĐỘNG<br><br></A>
+<UL>
+<LI><A Href='#'>SƠN<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HẰNG<br><br>PHƯƠNG</A></LI>
+<LI><A Href='#'>THỦY<br><br>HÀ</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>ĐIỆN<br><br></A>
+<UL>
+<LI><A Href='#'>MẠNH<br><br></A></LI>
+<LI><A Href='#'>CƯỜNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LAI<br><br></A></LI>
+<LI><A Href='#'>KHẨN<br><br></A>
+<UL>
+<LI><A Href='#'>14.BÁCH<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>HƯỚNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.HÒE<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HÃNH<br><br></A>
+<UL>
+<LI><A Href='#'>11.CẢNH<br><br></A>
+<UL>
+<LI><A Href='#'>HỢI<br><br></A>
+<UL>
+<LI><A Href='#'>HẠNH<br><br></A></LI>
+<LI><A Href='#'>HOA<br><br></A></LI>
+<LI><A Href='#'>NHUNG<br><br></A></LI>
+<LI><A Href='#'>TỴ<br><br></A></LI>
+<LI><A Href='#'>YÊN<br><br></A></LI>
+<LI><A Href='#'>TRƯỞNG<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.QUANG<br><br></A>
+<UL>
+<LI><A Href='#'>TÚY<br><br></A>
+<UL>
+<LI><A Href='#'>UYÊN<br><br></A>
+<UL>
+<LI><A Href='#'>ĐÀN<br><br>14.TUYẾN</A></LI>
+<LI><A Href='#'>SÁO<br><br>14.TIẾN</A></LI>
+<LI><A Href='#'>SẬU<br><br>14.XUẤT</A></LI>
+<LI><A Href='#'>SẮP<br><br>14.HANH</A></LI>
+<LI><A Href='#'>HIỆU<br><br></A>
+<UL>
+<LI><A Href='#'>LINH<br><br></A></LI>
+<LI><A Href='#'>TUẤN<br><br></A></LI>
+<LI><A Href='#'>HUY<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>UYỂN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TÚY<br><br></A>
+<UL>
+<LI><A Href='#'>LAI<br><br>THẬP</A></LI>
+<LI><A Href='#'>TÂN<br><br></A>
+<UL>
+<LI><A Href='#'>NGỌC<br><br>THÀNH</A></LI>
+<LI><A Href='#'>HÀ<br><br></A>
+<UL>
+<LI><A Href='#'>KIM<br><br></A></LI>
+<LI><A Href='#'>ÁNH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HUYỀN<br><br>14.CƯỜNG</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THI<br><br>TÂM</A></LI>
+<LI><A Href='#'>LỊCH<br><br>VINH</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HOAN<br><br></A>
+<UL>
+<LI><A Href='#'>HÂN<br><br></A></LI>
+<LI><A Href='#'>VÂN<br><br></A></LI>
+<LI><A Href='#'>HUÊ<br><br></A>
+<UL>
+<LI><A Href='#'>DUYỆT<br><br>CHUNG</A></LI>
+<LI><A Href='#'>TUYỀN<br><br>ĐẠT</A></LI>
+<LI><A Href='#'>TÙNG<br><br>14.KHOA</A></LI>
+<LI><A Href='#'>TÌNH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HIỀN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HOAN<br><br></A>
+<UL>
+<LI><A Href='#'>NGUYÊN<br><br></A>
+<UL>
+<LI><A Href='#'>THẮM<br><br></A></LI>
+<LI><A Href='#'>THỦY<br><br></A></LI>
+<LI><A Href='#'>HUỆ<br><br></A></LI>
+<LI><A Href='#'>MẠNH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>VỊ<br><br></A></LI>
+<LI><A Href='#'>VÌ<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HỶ<br><br></A>
+<UL>
+<LI><A Href='#'>MƯU<br><br>LƯU</A></LI>
+<LI><A Href='#'>MẸO<br><br></A></LI>
+<LI><A Href='#'>KẾ<br><br></A></LI>
+<LI><A Href='#'>TIẾP<br><br></A>
+<UL>
+<LI><A Href='#'>ĐIỆP<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.HOÁN<br><br></A>
+<UL>
+<LI><A Href='#'>CẢI<br><br></A>
+<UL>
+<LI><A Href='#'>THƠI<br><br></A></LI>
+<LI><A Href='#'>THOẠN<br><br></A></LI>
+<LI><A Href='#'>THỜI<br><br>13.MẠNH</A></LI>
+<LI><A Href='#'>QUYÊN<br><br></A></LI>
+<LI><A Href='#'>QUYÊN<br><br></A>
+<UL>
+<LI><A Href='#'>DỊU (N)<br><br></A></LI>
+<LI><A Href='#'>NAM<br><br></A></LI>
+<LI><A Href='#'>XUÂN<br><br></A></LI>
+<LI><A Href='#'>SANG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THẨM<br><br>SỬ</A></LI>
+<LI><A Href='#'>THẠO<br><br>HÀ</A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.TƯ<br><br></A>
+<UL>
+<LI><A Href='#'>CÁCH<br><br></A>
+<UL>
+<LI><A Href='#'>CẬN<br><br></A></LI>
+<LI><A Href='#'>KHỞI<br><br></A>
+<UL>
+<LI><A Href='#'>THỦY<br><br>PHÓNG</A></LI>
+<LI><A Href='#'>CHIẾN<br><br></A>
+<UL>
+<LI><A Href='#'>TÚ<br><br></A></LI>
+<LI><A Href='#'>NGỌC<br><br></A></LI>
+<LI><A Href='#'>TRƯỜNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THIÊM<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>CHĂM<br><br></A></LI>
+<LI><A Href='#'>CHANG<br><br></A></LI>
+<LI><A Href='#'>KHANG<br><br></A>
+<UL>
+<LI><A Href='#'>CƯỜNG<br><br></A>
+<UL>
+<LI><A Href='#'>PHƯƠNG<br><br></A></LI>
+<LI><A Href='#'>15.QUANG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>QUYẾT<br><br></A>
+<UL>
+<LI><A Href='#'>HÂN<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRUNG<br><br></A>
+<UL>
+<LI><A Href='#'>HÀ<br><br></A></LI>
+<LI><A Href='#'>HIỀN<br><br></A></LI>
+<LI><A Href='#'>THÀNH<br><br></A>
+<UL>
+<LI><A Href='#'>15.HƯNG<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>CHỨC<br><br></A>
+<UL>
+<LI><A Href='#'>DÙNG<br><br></A></LI>
+<LI><A Href='#'>VỤ<br><br></A>
+<UL>
+<LI><A Href='#'>MIỀN<br><br>PHI</A></LI>
+<LI><A Href='#'>MÙA<br><br>QUÂN</A></LI>
+<LI><A Href='#'>VINH<br><br></A>
+<UL>
+<LI><A Href='#'>BẢO<br><br></A></LI>
+<LI><A Href='#'>NGỌC<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>TOAN<br><br></A></LI>
+<LI><A Href='#'>THÂU<br><br></A>
+<UL>
+<LI><A Href='#'>THOA<br><br></A></LI>
+<LI><A Href='#'>LÝ<br><br></A></LI>
+<LI><A Href='#'>HUỆ<br><br></A></LI>
+<LI><A Href='#'>THƠM<br><br></A></LI>
+<LI><A Href='#'>VINH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>VŨ<br><br></A>
+<UL>
+<LI><A Href='#'>HỒNG<br><br></A></LI>
+<LI><A Href='#'>ĐẠI<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A></LI>
+<LI><A Href='#'>DIỆP<br><br></A></LI>
+<LI><A Href='#'>15.KHÔI<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>HỒNG<br><br>DŨNG</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>NGOÃN<br><br>NGHĨA</A></LI>
+<LI><A Href='#'>NGOAN<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.NĂM<br><br></A>
+<UL>
+<LI><A Href='#'>DUY<br><br></A>
+<UL>
+<LI><A Href='#'>DIỄM<br><br></A></LI>
+<LI><A Href='#'>DOANH<br><br>NAM</A></LI>
+<LI><A Href='#'>ĐOÀN<br><br></A>
+<UL>
+<LI><A Href='#'>HẢI<br><br></A></LI>
+<LI><A Href='#'>VÂN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>ĐẢNG<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>DƯỠNG<br><br></A>
+<UL>
+<LI><A Href='#'>ẢNH<br><br></A>
+<UL>
+<LI><A Href='#'>HƯNG<br><br></A></LI>
+<LI><A Href='#'>NGUYÊN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>DƯƠNG<br><br></A>
+<UL>
+<LI><A Href='#'>ĐÀO<br><br></A></LI>
+<LI><A Href='#'>CÚC<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>DŨNG<br><br></A>
+<UL>
+<LI><A Href='#'>LÊ<br><br></A>
+<UL>
+<LI><A Href='#'>BẢO<br><br></A></LI>
+<LI><A Href='#'>ANH<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TRUNG<br><br></A>
+<UL>
+<LI><A Href='#'>QUÂN<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>11.BẢY<br><br></A>
+<UL>
+<LI><A Href='#'>TÁM<br><br></A>
+<UL>
+<LI><A Href='#'>QUYẾT<br><br></A>
+<UL>
+<LI><A Href='#'>TRƯỜNG<br><br></A></LI>
+<LI><A Href='#'>CHIẾN<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>DỰ<br><br></A></LI>
+<LI><A Href='#'>TẬP<br><br></A></LI>
+<LI><A Href='#'>LUYỆN<br><br></A></LI>
+<LI><A Href='#'>NẾP<br><br></A></LI>
+<LI><A Href='#'>TẺ<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>THĂNG<br><br></A>
+<UL>
+<LI><A Href='#'>TUẤN<br><br></A>
+<UL>
+<LI><A Href='#'>LÝ<br><br>KHOA</A></LI>
+<LI><A Href='#'>VINH<br><br></A>
+<UL>
+<LI><A Href='#'>HOA<br><br></A></LI>
+<LI><A Href='#'>QUÝ<br><br></A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>TOẢN<br><br></A>
+<UL>
+<LI><A Href='#'>ĐẠT<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>THUẤN<br><br></A>
+<UL>
+<LI><A Href='#'>THU<br><br></A></LI>
+<LI><A Href='#'>TUÂN<br><br></A>
+<UL>
+<LI><A Href='#'>ANH<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>TƠ<br><br></A></LI>
+<LI><A Href='#'>LƠ<br><br>BẢN</A></LI>
+<LI><A Href='#'>MƠ<br><br>HÙNG</A></LI>
+<LI><A Href='#'>THƠ<br><br>CẢNH</A></LI>
+</UL>
+</LI>
+<LI><A Href='#'>LONG<br><br></A>
+<UL>
+<LI><A Href='#'>LÕN<br><br></A></LI>
+<LI><A Href='#'>LÀN<br><br></A></LI>
+<LI><A Href='#'>LÀ<br><br></A></LI>
+<LI><A Href='#'>THÀNH<br><br></A>
+<UL>
+<LI><A Href='#'>CÔNG<br><br></A></LI>
+<LI><A Href='#'>THẢO<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>12.MÃ<br><br></A>
+<UL>
+<LI><A Href='#'>SẮC<br><br></A>
+<UL>
+<LI><A Href='#'>THÚY<br><br></A></LI>
+<LI><A Href='#'>HẰNG<br><br></A></LI>
+<LI><A Href='#'>TRANG<br><br></A></LI>
+<LI><A Href='#'>VIỆT<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>08.CHÈ (N)<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>GIÁP<br><br></A></LI>
+<LI><A Href='#'>THUNG<br><br></A></LI>
+<LI><A Href='#'>PHƯỢNG<br><br></A></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><A Href='#'>HÙNG<br><br></A></LI>
+<LI><A Href='#'>LY<br><br></A></LI>
+<LI><A Href='#'>BÁO<br><br></A></LI>
+<LI><A Href='#'>SOẠN<br><br></A></LI>
+<LI><A Href='#'>TRỰC<br><br></A></LI>
+</UL>
+</LI>
+</UL></div>
+</body>
+</html>
